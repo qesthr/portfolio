@@ -3,12 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Queen Niña de los Reyes — Developer & Technical Project Lead</title>
-<meta name="description" content="Portfolio of Queen Niña J. de los Reyes — secure web systems, legacy refactoring, and blockchain prototypes.">
+<title>Queen Niña de los Reyes — Secure, maintainable web systems</title>
+<meta name="description" content="Fourth-year BS Information Technology student designing secure, maintainable web systems, from architecture and database design through testing and documentation. Seeking an OJT placement.">
+<meta name="theme-color" content="#0E0D12">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%237B4DFF'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-weight='800' font-size='38' text-anchor='middle' fill='%230E0D12'%3EQ%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
 <script type="importmap">{"imports":{"lenis":"https://cdn.jsdelivr.net/npm/lenis@1.3.19/dist/lenis.mjs"}}</script>
 </head>
 <body>
@@ -20,13 +22,13 @@
 
 <header class="site">
   <nav aria-label="Primary">
-    <a class="logo" href="#top"><span class="mono">QR</span><span class="nm">Queen Niña de los Reyes</span></a>
+    <a class="logo" href="#top" aria-label="Queen Niña de los Reyes, home"><span class="qmark">Q</span><span class="nm">Queen Niña de los Reyes</span></a>
     <ul class="links">
       <li><a href="#story">Story</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#impact">Impact</a></li>
-      <li><a href="#milestones">Milestones</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#numbers">Numbers</a></li>
+      <li><a href="#credentials">Credentials</a></li>
+      <li><a class="btn" href="#contact">Contact</a></li>
     </ul>
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
   </nav>
@@ -34,8 +36,8 @@
 <div id="menu" aria-hidden="true">
   <a href="#story" style="--i:0">Story</a>
   <a href="#projects" style="--i:1">Projects</a>
-  <a href="#impact" style="--i:2">Impact</a>
-  <a href="#milestones" style="--i:3">Milestones</a>
+  <a href="#numbers" style="--i:2">Numbers</a>
+  <a href="#credentials" style="--i:3">Credentials</a>
   <a href="#contact" style="--i:4">Contact</a>
 </div>
 
@@ -43,30 +45,33 @@
   <!-- HERO -->
   <section id="top">
     <div class="hero-top">
-      <h2 class="roles" id="roles">
-        <span class="ln"><span class="li">Developer</span></span>
-        <span class="ln"><span class="li">Project Lead</span></span>
-        <span class="ln"><span class="li">Refactorer</span></span>
-        <span class="ln"><span class="li">Web3 Builder</span></span>
+      <h2 class="tagline" id="roles">
+        <span class="ln"><span class="li">Architecture first.</span></span>
+        <span class="ln"><span class="li">Security from line one.</span></span>
       </h2>
-      <p class="hero-desc fade" id="hdesc">I build, update, and maintain <span class="u">secure web systems</span> — from database design to testing — with a focus on code that is easy to maintain.</p>
+      <div class="hero-right fade" id="hdesc">
+        <p class="hero-desc">I design architecture and database structure first, plan security in from the start, and see each project through to testing and documentation.</p>
+        <p class="hero-meta"><span>Looking for: OJT placement</span>Laravel · React · Node.js · Solidity · Hardhat</p>
+      </div>
     </div>
 
-    <div class="portrait">
-      <figure class="liquid bare" role="img" aria-label="Portrait of Queen Niña de los Reyes" data-scale="30">
-        <svg class="f" aria-hidden="true"><filter id="lf-hero" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="2" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1"/></filter></svg>
-        <div class="lq" style="filter:url(#lf-hero)">
-          <!-- Replace portrait.jpg with your photo file (same folder as this HTML) -->
-          <div class="pframe"><img src="/media/prof pic 3.jpg" alt="Queen Niña de los Reyes" fetchpriority="high"></div>
-        </div>
+    <div class="portrait back" aria-hidden="true">
+      <figure class="liquid bare">
+        <div class="lq" style="filter:url(#lf-hero)"><img src="media/portrait.webp" alt="" width="1500" height="1332" fetchpriority="high"></div>
       </figure>
     </div>
     <div class="pfade"></div>
 
-    <h1 class="giant" id="giant" aria-label="Queen Reyes">
-      <span class="row" data-t="Queen" data-start="0"></span>
-      <span class="row" data-t="Reyes" data-start="240"></span>
+    <h1 class="giant" id="giant" aria-label="Queen Niña de los Reyes">
+      <span class="row" data-t="Queen Niña" data-start="0" aria-hidden="true"></span>
+      <span class="row" data-t="de los Reyes" data-start="240" aria-hidden="true"></span>
     </h1>
+    <div class="portrait front">
+      <figure class="liquid bare" role="img" aria-label="Portrait of Queen Niña de los Reyes" data-scale="30">
+        <svg class="f" aria-hidden="true"><filter id="lf-hero" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="2" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1"/></filter></svg>
+        <div class="lq" style="filter:url(#lf-hero)"><img src="media/portrait.webp" alt="" width="1500" height="1332"></div>
+      </figure>
+    </div>
     <div class="cue fade" id="cue">Scroll to enter</div>
   </section>
 
@@ -81,14 +86,14 @@
       <div class="l">
         <div class="eyebrow">The Story</div>
         <h2 class="h" style="max-width:16ch" data-lines="Maintainable code|is a form|of respect."></h2>
-        <p class="lead fade">I work between planning and hands-on development. As Technical Project Lead, I led the <span class="u">BukSU Research Repository</span> and <span class="u">Event Management</span> systems, retrofitted older modules with <span class="u">RBAC</span>, and built blockchain prototypes where records are hard to change once saved. A 4th-year IT student at Bukidnon State University, bridging Web2 and Web3.</p>
+        <p class="lead fade">I design web systems that stay maintainable and secure, from the first architecture sketch through testing and documentation, across <span class="u">Laravel/React</span> products and <span class="u">blockchain prototypes</span>. I'm a fourth-year BS Information Technology student at Bukidnon State University.</p>
       </div>
       <div class="r">
         <ul class="pr">
-          <li class="fade" style="--d:0ms"><span class="n">01</span><div><h3>Design the data first</h3><p>Good systems start with the <span class="u">database design</span>. I model it carefully so searches stay fast and data loads quickly.</p></div></li>
-          <li class="fade late" style="--d:90ms"><span class="n">02</span><div><h3>Make old code safer</h3><p>Legacy modules get <span class="u">role-based access control</span> and secure forms, so they are safer and easier to work with.</p></div></li>
-          <li class="fade late" style="--d:180ms"><span class="n">03</span><div><h3>Prove it, then document it</h3><p>Everything gets <span class="u">functional testing</span> and written documentation, planned in steps to meet client and school requirements.</p></div></li>
-          <li class="fade late" style="--d:270ms"><span class="n">04</span><div><h3>Build trust into the record</h3><p>On the Web3 side, <span class="u">Solidity</span> and <span class="u">Hardhat</span> prototypes record property and permits immutably, and QR-based verification keeps checks simple.</p></div></li>
+          <li class="fade" style="--d:0ms"><span class="n">01</span><div><h3>Maintainable systems</h3><p>Architecture and <span class="u">database design</span> come first, so systems stay fast and easy to work on.</p><p class="proof"><span>Proof</span>eTukod · Car Rental Monitoring</p></div></li>
+          <li class="fade late" style="--d:90ms"><span class="n">02</span><div><h3>Security by design</h3><p><span class="u">Role-based access control (RBAC)</span> and secure forms are planned from the start, including when improving older modules.</p><p class="proof"><span>Proof</span>eTukod access model</p></div></li>
+          <li class="fade late" style="--d:180ms"><span class="n">03</span><div><h3>Plan to delivery</h3><p>I lead projects from the first plan through testing and documentation, using the <span class="u">SDLC</span>.</p><p class="proof"><span>Proof</span>Capstone · BukSU Event Management</p></div></li>
+          <li class="fade late" style="--d:270ms"><span class="n">04</span><div><h3>Web2 and Web3</h3><p>Laravel/React web systems alongside blockchain prototypes in <span class="u">Solidity</span>, Hardhat and SUI.</p><p class="proof"><span>Proof</span>eTukod prototype · SUI Codecamp</p></div></li>
         </ul>
       </div>
     </div>
@@ -99,24 +104,24 @@
     <div class="vhead">
       <div>
         <div class="eyebrow">Selected Projects</div>
-        <h2 class="h" style="max-width:14ch" data-lines="Systems built|to last."></h2>
+        <h2 class="h" style="max-width:14ch" data-lines="Systems before|screens."></h2>
       </div>
       <div class="vlabel">04 / Projects</div>
     </div>
     <ul class="vgrid" id="vgrid"></ul>
   </section>
 
-  <!-- IMPACT -->
-  <section class="sec" id="impact">
+  <!-- NUMBERS -->
+  <section class="sec" id="numbers">
     <div class="eyebrow">By The Numbers</div>
-    <h2 class="h one" data-lines="Built, tested,|documented."></h2>
+    <h2 class="h one" data-lines="Facts, not|adjectives."></h2>
     <dl class="stats" id="stats"></dl>
   </section>
 
-  <!-- MILESTONES -->
-  <section class="sec" id="milestones">
-    <div class="eyebrow">Milestones</div>
-    <h2 class="h one" data-lines="Proof of work."></h2>
+  <!-- CREDENTIALS -->
+  <section class="sec" id="credentials">
+    <div class="eyebrow">Credentials &amp; Experience</div>
+    <h2 class="h one" data-lines="On the record."></h2>
     <div class="vbody">
       <ul class="sel" id="sel"></ul>
       <div class="feat">
@@ -124,11 +129,11 @@
           <blockquote><p id="quote"></p></blockquote>
           <footer id="qcap"></footer>
         </div>
-        <figure class="liquid fade" id="fig" role="img" aria-label="Milestone" data-scale="22">
-          <svg class="f" aria-hidden="true"><filter id="lf-feat" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="2"/><feDisplacementMap in2="noise" scale="1"/></filter></svg>
+        <figure class="liquid fade" id="fig" role="img" aria-label="Credential" data-scale="22">
+          <svg class="f" aria-hidden="true"><filter id="lf-feat" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="2" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1"/></filter></svg>
           <div class="lq" style="filter:url(#lf-feat)"><div class="ph"><div class="grid"></div></div></div>
           <div class="badge"><b id="bigY"></b><span id="bigL"></span></div>
-          <div class="veil"></div><div class="glow"></div><div class="vig"></div>
+          <div class="glow"></div><div class="vig"></div>
         </figure>
       </div>
     </div>
@@ -137,11 +142,11 @@
   <!-- CONTACT -->
   <footer class="contact" id="contact">
     <div class="eyebrow">Let's Build</div>
-    <h2 class="h" style="max-width:18ch" data-lines="Need a system|that has to be|secure and|maintainable?" ></h2>
-    <p class="lead fade" style="max-width:44ch">Planning, building, testing, and documenting — from the first plan to the final system. Say hello.</p>
+    <h2 class="h" style="max-width:18ch" data-lines="Need a system|that has to be|secure and|maintainable?"></h2>
+    <p class="lead fade" style="max-width:46ch">I'm looking for an OJT placement where I can build secure, maintainable web systems, planned from the first architecture sketch through testing and documentation.</p>
     <a class="mail" href="mailto:queennndlr@gmail.com"><span>queennndlr@gmail.com</span><em>↗</em></a>
     <div class="fbar">
-      <div><p class="sig">Queen Niña de los Reyes</p><p class="tag">Designed &amp; built with conviction.</p></div>
+      <div><p class="sig">Queen Niña de los Reyes</p><p class="tag">Maintainable systems, from first plan to final test.</p></div>
       <nav aria-label="Contact"><ul>
         <li><a href="mailto:queennndlr@gmail.com">Email</a></li>
         <li><a href="tel:+639776644468">+63 9776 644 468</a></li>
@@ -152,8 +157,7 @@
   </footer>
 </main>
 
-<script src="/js/app.js"></script>
-
-<script type="module" src="/js/main.js"></script>
+<script src="js/app.js"></script>
+<script type="module" src="js/main.js"></script>
 </body>
 </html>
